@@ -156,7 +156,7 @@ Arduino framework — it manages the ESP32 toolchain and libraries for you,
 so there's no separate "board package" install step like the Arduino IDE
 requires.
 
-1. Install **[Visual Studio Code](https://code.visualstudio.com/)**.
+1. Install **[Visual Studio Code](https://code.visualstudio.com/)**.  You can also use whatever is your preferred coding assistant combo i.e. Cursor + Claude or Codex, obviously.
 2. In VS Code, open the Extensions panel (`Cmd+Shift+X`) and install
    **"PlatformIO IDE"**. Wait for it to finish installing its own toolchain
    (a progress bar appears bottom-left; this can take a few minutes the
