@@ -221,6 +221,18 @@ comfortable with the basics, LVGL is a natural next step for anything more
 than a few screens — see [Next steps](#next-steps).
 
 ---
+### Which example should I start with?
+
+If you're new to ESP32 development, try the examples in this order:
+
+1. `01_hello_display.cpp` — confirm the display is working and learn the basic drawing flow.
+2. `02_blink_rgb_led.cpp` — control the onboard RGB LED.
+3. `03_button_input.cpp` — read input from the physical BOOT button.
+4. `04_wifi_scan_serial.cpp` — scan nearby Wi-Fi networks and print the results to the Serial Monitor.
+
+To try an example, copy its contents into `src/main.cpp`, build the project, and upload it to the board.
+
+Starting with the display example is recommended because it gives immediate visual confirmation that the project, board, and upload process are working correctly.
 
 ## Troubleshooting
 
