@@ -209,7 +209,8 @@ esp32project/
     ├── 01_hello_display.cpp
     ├── 02_blink_rgb_led.cpp
     ├── 03_button_input.cpp
-    └── 04_wifi_scan_serial.cpp
+    ├── 04_wifi_scan_serial.cpp
+    └── 05_bitcoin_block_clock.cpp
 ```
 
 `src/main.cpp` is deliberately written **without a GUI framework** (no
@@ -229,6 +230,9 @@ If you're new to ESP32 development, try the examples in this order:
 2. `02_blink_rgb_led.cpp` — control the onboard RGB LED.
 3. `03_button_input.cpp` — read input from the physical BOOT button.
 4. `04_wifi_scan_serial.cpp` — scan nearby Wi-Fi networks and print the results to the Serial Monitor.
+5. `05_bitcoin_block_clock.cpp` — connect to mempool.space over HTTPS and
+   display the current block height, next halving countdown, and fee rates.
+   A working starting point for any Bitcoin-aware device app.
 
 To try an example, copy its contents into `src/main.cpp`, build the project, and upload it to the board.
 
@@ -257,8 +261,8 @@ it:
 - Add [LVGL](https://lvgl.io/) for real widgets (buttons, sliders, menus)
   instead of hand-drawn text screens.
 - Use the microSD slot to log IMU data or load images/fonts.
-- Add BLE (the ESP32-S3 supports it alongside Wi-Fi) for a phone-controlled
-  interface.
+- Extend `05_bitcoin_block_clock.cpp` with price data, a Lightning invoice
+  QR code (see the `qrcode` library for ESP32), or BLE push to a companion phone app.
 - Wire up a 3.7V Li-Po battery to the JST connector and add deep-sleep
   power management for a portable build.
 
